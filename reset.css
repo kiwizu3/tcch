@@ -5,6 +5,10 @@ body {
     /* background: #1C1C1C; */
 }
 
+.lights-off.is-boxed {
+    background: #1c1c1c !important;
+}
+
 .site-header {
     position: relative;
     padding: 0px 0;
