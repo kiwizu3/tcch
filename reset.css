@@ -95,8 +95,8 @@ body {
     padding: 0.25rem;
     position: absolute;
     z-index: 1;
-    bottom: 0rem;
-    left: 6rem;
+    bottom: 100%;
+    left: 50%;
     margin-left: -60px;
     font-size: .85rem;
 }
