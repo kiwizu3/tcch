@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *,
 html,
 body {
@@ -20,7 +22,7 @@ body {
 }
 
 .main-dish {
-    width: 26rem;
+    /* width: 26rem; */
     animation: maindishrotate 40s infinite;
 }
 
@@ -121,5 +123,18 @@ body {
         align-items: flex-start;
         margin: 0;
         flex-direction: column;
+    }
+}
+
+.text-cursive {
+    font-family: 'Pacifico', cursive !important;
+}
+
+@media (min-width: 641px) {
+    h1,
+    .h1 {
+        font-size: 54px;
+        line-height: 54px;
+        letter-spacing: 0px;
     }
 }
