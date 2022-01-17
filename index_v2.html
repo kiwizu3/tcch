@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Ceylon Curry House</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <img class="header-logo-image asset-light" src="dist/images/logo-light.svg" alt="Logo">
+                                <img class="header-logo-image asset-dark logo" src="dist/images/logo-dark.svg"
+                                    alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title mt-0"><span class="text-cursive">Welcome to</span> <br />the
+                                <strong>CEYLON<strong>
+                            </h1>
+                            <p class="hero-paragraph">Where culture and flavour of Sri Lanka meet, to bring you an
+                                experience of food never before witnessed.</p>
+                            <div class="hero-cta">
+                                <button class="button button-primary" id="myBtn">Order Food</button>
+                                <div class="d-flex flex-column j-c-s a-i-c">
+
+                                    <a href="tel:0299092222" class="tooltip button-call">
+                                        <!-- <span class="tooltiptext-call">Call us on 02 9909 2222</span> -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 159.016 158.964">
+                                            <path
+                                                d="M147.976,12.013l-29.254,6.739a14.169,14.169,0,0,1-16.242-8.26L88.972-21.029A14.247,14.247,0,0,1,93.04-37.612l12.422-10.155a96.572,96.572,0,0,0-38.57-38.539L56.737-73.884a14.247,14.247,0,0,1-16.583,4.068L8.6-83.325A14.2,14.2,0,0,1,.341-99.566L7.08-128.82a14.157,14.157,0,0,1,13.851-11.024A138,138,0,0,1,159-1.837,14.156,14.156,0,0,1,147.976,12.013ZM21.521-124.969,15.031-96.8l30.5,13.074,17.3-21.148C93.506-90.467,109.592-74.443,124-43.7L102.853-26.4l13.074,30.5L144.094-2.4A123.128,123.128,0,0,0,21.521-124.969Z"
+                                                transform="translate(159 19.12) rotate(180)" fill="#fff" />
+                                        </svg>
+                                        <span class="ml-2">02 9909 2222</span>
+                                    </a>
+
+                                    <!-- <a href="https://www.instagram.com/the__ceylon/" target="_blank"
+                                        class="tooltip button-ig">
+                                        <span class="tooltiptext-ig">Place an order on Instagram</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 14 13.997">
+                                            <path
+                                                d="M7,4.34a3.589,3.589,0,1,0,3.589,3.589A3.583,3.583,0,0,0,7,4.34Zm0,5.922A2.333,2.333,0,1,1,9.332,7.929,2.337,2.337,0,0,1,7,10.262Zm4.572-6.068a.837.837,0,1,0-.837.837A.837.837,0,0,0,11.571,4.193Zm2.377.85A4.142,4.142,0,0,0,12.817,2.11,4.17,4.17,0,0,0,9.884.98C8.729.914,5.265.914,4.109.98A4.163,4.163,0,0,0,1.177,2.107,4.156,4.156,0,0,0,.046,5.04c-.066,1.156-.066,4.619,0,5.775a4.142,4.142,0,0,0,1.131,2.933,4.175,4.175,0,0,0,2.933,1.131c1.156.066,4.619.066,5.775,0a4.142,4.142,0,0,0,2.933-1.131,4.17,4.17,0,0,0,1.131-2.933C14.013,9.659,14.013,6.2,13.948,5.043Zm-1.493,7.012a2.362,2.362,0,0,1-1.33,1.33A15.426,15.426,0,0,1,7,13.666a15.545,15.545,0,0,1-4.126-.281,2.362,2.362,0,0,1-1.33-1.33,15.425,15.425,0,0,1-.281-4.126A15.545,15.545,0,0,1,1.542,3.8a2.362,2.362,0,0,1,1.33-1.33A15.425,15.425,0,0,1,7,2.191a15.545,15.545,0,0,1,4.126.281,2.362,2.362,0,0,1,1.33,1.33,15.425,15.425,0,0,1,.281,4.126A15.416,15.416,0,0,1,12.455,12.055Z"
+                                                transform="translate(0.004 -0.93)" fill="#fff" />
+                                        </svg>
+                                    </a> -->
+                                </div>
+                            </div>
+                            <div class="lights-toggle d-none">
+                                <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch"
+                                    checked="checked">
+                                <label for="lights-toggle" class="text-xs"><span>Turn me <span
+                                            class="label-text">dark</span></span></label>
+                            </div>
+                        </div>
+                        <div class="hero-media">
+                            <div class="header-illustration">
+                                <img class="header-illustration-image asset-dark"
+                                    src="dist/images/header-illustration-dark.svg" alt="Header illustration">
+                            </div>
+                            <div class="hero-media-illustration">
+                                <img class="hero-media-illustration-image asset-dark"
+                                    src="dist/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
+                            </div>
+                            <div class="hero-media-container">
+                                <img class="hero-media-image asset-dark main-dish" src="dist/images/main-dish.png"
+                                    alt="Hero media">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="features section">
+                <div class="container">
+                    <div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-header text-center">
+                            <div class="container-sm">
+                                <h2 class="section-title mt-0">The Menu</h2>
+                                <!-- <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate
+                                    the graphic elements of a document or visual presentation.</p> -->
+                            </div>
+                        </div>
+                        <div class="features-wrap">
+
+                            <div class="tab">
+                                <button class="tablinks" onclick="openCity(event, 'entry')" >Entrée</button>
+                                <button class="tablinks" onclick="openCity(event, 'sides')" >Sides</button>
+                                <button class="tablinks" onclick="openCity(event, 'mains')">Mains</button>
+                                <button class="tablinks" onclick="openCity(event, 'desserts')" id="defaultOpen">Desserts</button>
+                            </div>
+
+                            <div id="entry" class="tabcontent">
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/bread.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Roast paan (bread) with Hodi dip.</h4>
+                                            <h4 class="my-0">$11</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Oven roasted bread served with Chicken gravy dip,
+                                            Potato
+                                            gravy dip & Fish curry gravy dip with 3 types of bread (Plain, Garlic &
+                                            Cheese).</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/sauce.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Crispy prawns with sizzling curry house special sauce.</h4>
+                                            <h4 class="my-0">$15</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Crumb fried herb infused King prawns served with Kandy style Tomato and Garlic sauce.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/dish-2.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Charcoal black pepper pork Bao.</h4>
+                                            <h4 class="my-0">$13</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Lean pork slow cooked in Charcoal roasted spice mix, served on a Green Lettuce bed.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/fish.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Crunchy Calamari</h4>
+                                            <h4 class="my-0">$14</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Chickpea battered fried calamari rings pan tossed with pandan. Onion, Garlic and curry leaves
+                                            to give that extra kick.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="sides" class="tabcontent">
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/dish-6.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Raw Papaya Salad Caparase Salad</h4>
+                                            <h4 class="my-0">$13</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Australian papayas grated over rocket and cherry tomato with bocconcini cheese and lemon
+                                            vinaigrette.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/dish-8.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Ceylon Rocket Salad</h4>
+                                            <h4 class="my-0">$09</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Fresh rocket with balsamic, parmesan and olive oil dressing served with chillie lemon butter.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/chips.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Cassava bites</h4>
+                                            <h4 class="my-0">$09</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Fluffy casava deep fried to crispy perfection coated in homemade spicy sauce.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="mains" class="tabcontent">
+                             
+                             
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/dish-0.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Deconstructed Eggplant Moju</h4>
+                                            <h4 class="my-0">$21</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Delicious sauce made with whole spring onions, heirloom tomato, and miso sauce poured over
+                                            perfectly Grilled whole Eggplant.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/fish.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Whole Fish Ambulthiyal</h4>
+                                            <h4 class="my-0">$34</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Sour sauce made from a mum's passed down recipe with grilled whole fish of the day.</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/fish-1.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Passion fruit fish fillet</h4>
+                                            <h4 class="my-0">$28</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Pan seared boneless fish fillet with sweet and sour passionfruit sauce is just the dish you need this summer.</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/chicken.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">The ceylon special roast chicken</h4>
+                                            <h4 class="my-0">$22</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Sri Lankan style roast chicken cooked on a bed of potatoes and onion, served with gravy & Coconut Rotti.</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/dish-2.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Crackle Pork belly with coconut milk rice</h4>
+                                            <h4 class="my-0">$24</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Pandan infused coconut milk rice served with fried pork belly & Sweet onion jam.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/dish-4.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Kompittu rice & curry.</h4>
+                                            <h4 class="my-0">$23</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Cardomom & lemon grass infused yellow rice served with four curries of the day and crunchy papadam.</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/dish-8.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Sri lankan Fried rice</h4>
+                                            <h4 class="my-0">$18</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Chicken & egg fried rice served with cashew & sweet chillie sambal.</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/dish-9.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Seafood Kottu.</h4>
+                                            <h4 class="my-0">$22</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Shredded paratha rotti mixed with prawns, squid and crumb fried butter mushrooms.</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div id="desserts" class="tabcontent">
+
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/dish-5.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Wattalappan with vanilla gelato.</h4>
+                                            <h4 class="my-0">$17</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Kithul jaggery and coconut milk pudding served with Nutmeg grated Vanilla gelato</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/dish-6.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Tropical biscuit pudding</h4>
+                                            <h4 class="my-0">$12</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Flavor packed layers of chocolate butter, biscuits, and tropical fruit slice.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-inner mb-3">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/dish-4.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Cinnamon Banana fritters with jaggery sauce.</h4>
+                                            <h4 class="my-0">$13</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Batter fried Banana with Cinnamon infused jaggery sauce.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img class="asset-dark menu-image" src="dist/images/icons/cake.svg"
+                                            alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <div class="d-flex j-c-b a-i-s">
+                                            <h4 class="feature-title mt-0">Manuka honey ice cream with avocado cake.</h4>
+                                            <h4 class="my-0">$21</h4>
+                                        </div>
+                                        <p class="mb-0 text-sm">Sweet avocado cake served with Manuka honey drizzled ice cream.</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta section">
+                <div class="container-sm">
+                    <div class="cta-inner section-inner">
+                        <div class="cta-header text-center">
+                            <h2 class="section-title mt-0">The Ceylon Curry House Team</h2>
+                            <p class="section-paragraph"><span class="name-tag">Shanilka Suraweera</span> | <span class="name-tag">Kalani Oshadi</span> | <span class="name-tag">Umanda Suraweera</span></p>
+                            <div class="features-image">
+                                <img class="features-illustration asset-dark"
+                                    src="dist/images/features-illustration-dark.svg" alt="Feature illustration">
+                                <img class="features-box asset-dark" src="dist/images/features-box-dark.svg"
+                                    alt="Feature box">
+                                <img class="features-illustration asset-dark"
+                                    src="dist/images/features-illustration-top-dark.svg" alt="Feature illustration top">
+                                <img class="features-illustration asset-light"
+                                    src="dist/images/features-illustration-light.svg" alt="Feature illustration">
+                                <img class="features-box asset-light" src="dist/images/features-box-light.svg"
+                                    alt="Feature box">
+                                <img class="features-illustration asset-light"
+                                    src="dist/images/features-illustration-top-light.svg"
+                                    alt="Feature illustration top">
+                            </div>
+                            <!-- <div class="cta-cta">
+                                <a class="button button-primary" href="#">Book a table</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer has-top-divider">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <div class="brand footer-brand">
+                        <a href="#">
+                            <img class="asset-light" src="dist/images/logo-light.svg" alt="Logo">
+                            <img class="asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ's</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-social-links list-reset">
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Instagram</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 13.997">
+                                    <path
+                                        d="M7,4.34a3.589,3.589,0,1,0,3.589,3.589A3.583,3.583,0,0,0,7,4.34Zm0,5.922A2.333,2.333,0,1,1,9.332,7.929,2.337,2.337,0,0,1,7,10.262Zm4.572-6.068a.837.837,0,1,0-.837.837A.837.837,0,0,0,11.571,4.193Zm2.377.85A4.142,4.142,0,0,0,12.817,2.11,4.17,4.17,0,0,0,9.884.98C8.729.914,5.265.914,4.109.98A4.163,4.163,0,0,0,1.177,2.107,4.156,4.156,0,0,0,.046,5.04c-.066,1.156-.066,4.619,0,5.775a4.142,4.142,0,0,0,1.131,2.933,4.175,4.175,0,0,0,2.933,1.131c1.156.066,4.619.066,5.775,0a4.142,4.142,0,0,0,2.933-1.131,4.17,4.17,0,0,0,1.131-2.933C14.013,9.659,14.013,6.2,13.948,5.043Zm-1.493,7.012a2.362,2.362,0,0,1-1.33,1.33A15.426,15.426,0,0,1,7,13.666a15.545,15.545,0,0,1-4.126-.281,2.362,2.362,0,0,1-1.33-1.33,15.425,15.425,0,0,1-.281-4.126A15.545,15.545,0,0,1,1.542,3.8a2.362,2.362,0,0,1,1.33-1.33A15.425,15.425,0,0,1,7,2.191a15.545,15.545,0,0,1,4.126.281,2.362,2.362,0,0,1,1.33,1.33,15.425,15.425,0,0,1,.281,4.126A15.416,15.416,0,0,1,12.455,12.055Z"
+                                        transform="translate(0.004 -0.93)" fill="#fff" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Facebook</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
+                                        fill="#FFF" />
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Twitter</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFF"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Google</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFF"/>
+                                </svg>
+                            </a>
+                        </li> -->
+                    </ul>
+                    <div class="footer-copyright">&copy; 2022 The Ceylon Curry House, all rights reserved</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <script src="dist/js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -281,3 +281,11 @@ a:active{
   .name-tag:hover{
     color: #FE4F60;
   }
+
+  .mb-3{
+      margin-bottom: 0.75rem;
+  }
+
+  .feature-content{
+    min-width: 25rem !important;
+  }
